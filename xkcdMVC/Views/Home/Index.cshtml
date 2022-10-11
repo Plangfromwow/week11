@@ -1,0 +1,12 @@
+﻿@model Comic;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>@Model.title</h1>
+    <a href="@Model.img"><img src="@Model.img" /></a>
+    <h2>Published on: @Model.year/@Model.month/@Model.day</h2>
+    @*<a href="https://localhost:7217/"><button class="btn btn-primary">New Comic</button></a>*@
+</div>
