@@ -15,11 +15,21 @@ var connection = await web.GetAsync($"/{pickedNumber}/info.0.json");
 //Comic result = await connection.Content.ReadAsAsync<Comic>();
 
 // This connects and gives us the instance of a class :) That's it very simple haha what are even api's too easy 
-Comic result = await connection.Content.ReadAsAsync<Comic>();
+try
+{
+    Comic result = await connection.Content.ReadAsAsync<Comic>();
+    Console.WriteLine($"The Title is: {result.title}");
+    Console.WriteLine($"The img link is: {result.img}");
+    Console.WriteLine($"The Date it was posted was: {result.year}/{result.month}/{result.day}");
+}
+catch (Exception)
+{
+    Console.WriteLine("Sorry, I could not find that one.");
+}
 
-Console.WriteLine($"The Title is: {result.title}");
-Console.WriteLine($"The img link is: {result.img}");
-Console.WriteLine($"The Date it was posted was: {result.year}/{result.month}/{result.day}");
+
+
+
 
 
 

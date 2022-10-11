@@ -14,18 +14,25 @@ namespace xkcdMVC.Controllers
             _logger = logger;
         }
 
-        async public Task<IActionResult> Index()
+        async public Task<IActionResult> Index(string comicnum)
         {
             //Random ran = new Random();
             //int randomint = ran.Next(1,614);
 
             HttpClient web = new HttpClient();
             web.BaseAddress = new Uri("https://xkcd.com/");
-            var connection = await web.GetAsync("info.0.json");
-            Comic com = await connection.Content.ReadAsAsync<Comic>();
+            var connection = await web.GetAsync($"{comicnum}/info.0.json");
 
-
-            return View(com);
+            try
+            {
+                Comic com = await connection.Content.ReadAsAsync<Comic>();
+                return View(com);
+            }
+            catch(Exception e)
+            {
+               
+                return View();
+            }
         }
 
         public IActionResult Privacy()

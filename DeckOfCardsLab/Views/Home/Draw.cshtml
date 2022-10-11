@@ -1,0 +1,18 @@
+﻿@model CardResponse;
+@{
+    ViewData["Title"] = "Draw";
+}
+
+<h1>Draw</h1>
+
+
+<div>
+    <h1 class="display-4">Your Cards are:</h1>
+    @foreach (Card car in Model.cards)
+    {
+        <div>
+            <h2>@car.code</h2>
+            <img src="@car.image" />
+        </div>
+    }
+</div>

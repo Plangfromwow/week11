@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XkcdConsoleAPICall", "XkcdC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xkcdMVC", "xkcdMVC\xkcdMVC.csproj", "{9DBDDAB7-626A-4888-9B51-0CD610955DCE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeckOfCardsLab", "DeckOfCardsLab\DeckOfCardsLab.csproj", "{CCACEB62-8C60-4819-BCC7-106D7A22486E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9DBDDAB7-626A-4888-9B51-0CD610955DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DBDDAB7-626A-4888-9B51-0CD610955DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DBDDAB7-626A-4888-9B51-0CD610955DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCACEB62-8C60-4819-BCC7-106D7A22486E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCACEB62-8C60-4819-BCC7-106D7A22486E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCACEB62-8C60-4819-BCC7-106D7A22486E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCACEB62-8C60-4819-BCC7-106D7A22486E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
