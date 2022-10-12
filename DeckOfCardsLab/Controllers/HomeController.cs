@@ -21,7 +21,6 @@ namespace DeckOfCardsLab.Controllers
             CardResponse newDeck = await connection.Content.ReadAsAsync<CardResponse>();
 
             
-
             return View(newDeck);
         }
 
