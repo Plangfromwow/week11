@@ -5,12 +5,14 @@
 
 <h1>Draw</h1>
 
+@Model.deck_id
 
-<div>
+
+<div class="d-sm-grid">
     <h1 class="display-4">Your Cards are:</h1>
     @foreach (Card car in Model.cards)
     {
-        <div>
+        <div class="flex-column">
             <h2>@car.code</h2>
             <img src="@car.image" />
         </div>

@@ -20,14 +20,17 @@ namespace DeckOfCardsLab.Controllers
             var connection = await web.GetAsync("deck/new/shuffle/?deck_count=1");
             CardResponse newDeck = await connection.Content.ReadAsAsync<CardResponse>();
 
-            var connectionDraw = await web.GetAsync($"deck/{newDeck.deck_id}/draw/?count=5");
-            newDeck = await connectionDraw.Content.ReadAsAsync<CardResponse>();
+            
 
             return View(newDeck);
         }
 
         async public Task<IActionResult> Draw(CardResponse newDeck)
         {
+            HttpClient web = new HttpClient();
+            web.BaseAddress = new Uri("https://deckofcardsapi.com/api/");
+            var connectionDraw = await web.GetAsync($"deck/{newDeck.deck_id}/draw/?count=5");
+            newDeck = await connectionDraw.Content.ReadAsAsync<CardResponse>();
             return View(newDeck);
         }
 

@@ -1,6 +1,9 @@
-﻿
+﻿@model CardResponse;
 @{
     ViewData["Title"] = "Home Page";
 }
 
-<a href="/home/draw">DRAW</a>
+<form method="post" action="/home/draw">
+    <input type="hidden" value="@Model.deck_id" name="deck_id" />
+    <input type="submit" placeholder="DRAW" />
+</form>
