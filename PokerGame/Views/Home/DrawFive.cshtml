@@ -1,0 +1,22 @@
+﻿@model PokerHands;
+@{
+    ViewData["Title"] = "DrawFive";
+}
+
+<h1>We have a game!</h1>
+
+<div>
+    Winner: @Model.winner.username 
+</div>
+
+<h2>Player 1: @Model.player1.username Score: @Model.player1.Value</h2>
+@foreach(Card nextcard in Model.player1.cards){
+    <img src="@nextcard.image"/>
+}
+
+<h2>Player 2: @Model.player2.username Score: @Model.player2.Value</h2>
+@foreach (Card nextcard in Model.player2.cards)
+{
+    <img src="@nextcard.image" />
+}
+
