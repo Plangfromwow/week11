@@ -5,18 +5,19 @@
 
 <h1>@Model.name Details</h1>
 
+<h3>Click on a character/starship to see the Wiki!</h3>
 <div>
 
     Movie Release Date: @Model.year.ToShortDateString()<br />
 
     <h2>Characters:</h2>
     @foreach(Character hero in Model.characters){
-        <div>@hero.name</div>
+        <div><a href="https://starwars.fandom.com/wiki/ @hero.name.Replace(" ","_")" target="_blank">@hero.name</a></div>
     }
 
     <br /><h2>Starships:</h2>
     @foreach(Starship stars in Model.starships){
-        <div>@stars.name</div>
+        <div><a href="https://starwars.fandom.com/wiki/ @stars.name.Replace(" ","_")" target="_blank">@stars.name</a></div>
     }
 
 </div>
