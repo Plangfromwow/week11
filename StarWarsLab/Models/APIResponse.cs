@@ -77,6 +77,8 @@
             var connection = await web.GetAsync($"{characterAddress}");
             APICharacter fetchedCharacter = await connection.Content.ReadAsAsync<APICharacter>();
 
+            
+
             Character character = new Character();
 
             character.name = fetchedCharacter.Name;

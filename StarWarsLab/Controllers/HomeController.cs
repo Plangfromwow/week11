@@ -27,6 +27,7 @@ namespace StarWarsLab.Controllers
 
         public IActionResult Privacy()
         {
+            
             return View();
         }
 
