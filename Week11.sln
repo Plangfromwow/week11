@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGameDemo", "CardGameDem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerGame", "PokerGame\PokerGame.csproj", "{50396534-54DA-4885-9C65-38E75831DE0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsLab", "StarWarsLab\StarWarsLab.csproj", "{79E3E121-5C64-4CDB-951F-E3B7DE739722}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{50396534-54DA-4885-9C65-38E75831DE0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50396534-54DA-4885-9C65-38E75831DE0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50396534-54DA-4885-9C65-38E75831DE0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79E3E121-5C64-4CDB-951F-E3B7DE739722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E3E121-5C64-4CDB-951F-E3B7DE739722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E3E121-5C64-4CDB-951F-E3B7DE739722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E3E121-5C64-4CDB-951F-E3B7DE739722}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
