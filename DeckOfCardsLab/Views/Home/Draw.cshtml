@@ -8,13 +8,10 @@
 @Model.deck_id
 
 
-<div class="d-sm-grid">
+<div>
     <h1 class="display-4">Your Cards are:</h1>
     @foreach (Card car in Model.cards)
     {
-        <div class="flex-column">
-            <h2>@car.code</h2>
-            <img src="@car.image" />
-        </div>
+        <img src="@car.image" />
     }
 </div>

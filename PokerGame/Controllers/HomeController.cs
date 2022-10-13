@@ -18,7 +18,7 @@ namespace PokerGame.Controllers
             return View();
         }
 
-        public async Task<IActionResult> DrawFive(string name1,string name2,int which)
+        public async Task<IActionResult> DrawFive(string name1, string name2, int which)
         {
             //create an instance of pokerhands
             // create a new deck
@@ -27,13 +27,13 @@ namespace PokerGame.Controllers
             // display 10 cards, and the name of the winner. 
             string deck_id = await CardAPI.GetNewDeck();
             PokerHands poker = new PokerHands();
-            
-            
-            Hand user1 = await CardAPI.GetHand(deck_id,5);
-            Hand user2 = await CardAPI.GetHand(deck_id,5);  
+
+
+            Hand user1 = await CardAPI.GetHand(deck_id, 5);
+            Hand user2 = await CardAPI.GetHand(deck_id, 5);
 
             user1.username = name1;
-            user2.username= name2;
+            user2.username = name2;
 
             poker.player1 = user1;
             poker.player2 = user2;
