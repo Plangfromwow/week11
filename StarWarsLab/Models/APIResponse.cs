@@ -30,6 +30,7 @@
             {
                 _web = new HttpClient();
                 //_web.BaseAddress = new Uri("https://swapi.dev/api/");
+                
             }
             return _web;
         }

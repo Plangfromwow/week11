@@ -1,0 +1,13 @@
+﻿@model Pictures;
+@{
+    ViewData["Title"] = "RoverPhotos";
+}
+
+<h1>@ViewBag.Rover Rover Photos</h1>
+
+@foreach(Picture pic in Model.picturesList){
+    <div>
+        <img src="@pic.img"/>
+        <h2>@pic.cameraNameFull</h2>
+    </div>
+}
